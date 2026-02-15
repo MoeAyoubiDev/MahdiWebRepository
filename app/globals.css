@@ -6,30 +6,59 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-gradient-to-br from-blue-50 via-white to-blue-50 text-gray-900;
+    @apply bg-[#f8fafc] text-gray-900 antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(2, 132, 199, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 50%, rgba(2, 132, 199, 0.04), transparent),
+      radial-gradient(ellipse 60% 40% at 0% 50%, rgba(2, 132, 199, 0.04), transparent);
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/90 backdrop-blur-xl border border-white/60 shadow-soft;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:shadow-soft-lg hover:-translate-y-1 hover:border-primary-200/50;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-primary-600 text-white rounded-full font-semibold
+      transition-all duration-300 ease-out
+      shadow-soft hover:shadow-soft-lg hover:-translate-y-0.5
+      active:translate-y-0 active:shadow-soft
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-white text-primary-700 rounded-full font-semibold border-2 border-primary-200
+      transition-all duration-300 ease-out
+      hover:border-primary-400 hover:bg-primary-50 hover:-translate-y-0.5
+      active:translate-y-0
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 tracking-tight;
+  }
+
+  .section-accent {
+    @apply w-24 h-1 bg-primary-500 mx-auto rounded-full;
   }
 }
 
 @layer utilities {
-  .glass {
-    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl;
-  }
-  
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
-  }
-  
   .fade-in-section {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  
+
   .fade-in-section.visible {
     opacity: 1;
     transform: translateY(0);
   }
 }
-

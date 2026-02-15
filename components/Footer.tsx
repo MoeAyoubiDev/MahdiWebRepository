@@ -12,7 +12,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800/80">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Doctor Info */}
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 rounded"
                   >
                     {link.label}
                   </a>
@@ -54,7 +54,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 hover:scale-110 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                 aria-label="Facebook"
               >
                 <svg
@@ -67,7 +67,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 hover:scale-110 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                 aria-label="Instagram"
               >
                 <svg
@@ -80,7 +80,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 hover:scale-110 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                 aria-label="LinkedIn"
               >
                 <svg

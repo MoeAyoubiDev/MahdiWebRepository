@@ -23,9 +23,9 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
         isScrolled
-          ? 'glass shadow-lg py-4'
+          ? 'glass shadow-soft py-4'
           : 'bg-transparent py-6'
       }`}
     >
@@ -42,7 +42,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className="inline-block text-gray-700 hover:text-primary-600 font-medium transition-colors relative py-1 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-primary-500 after:transition-all after:duration-300 hover:after:w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 rounded-sm"
               >
                 {link.label}
               </a>
@@ -50,7 +50,7 @@ export default function Navigation() {
           </div>
           <a
             href="#contact"
-            className="hidden md:block px-6 py-2 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors font-medium"
+            className="hidden md:block px-6 py-2.5 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-all duration-300 font-medium shadow-soft hover:shadow-soft-lg hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
           >
             Book Consultation
           </a>

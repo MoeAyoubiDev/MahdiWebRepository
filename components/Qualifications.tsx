@@ -108,10 +108,10 @@ export default function Qualifications() {
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="section-heading mb-4">
             Qualifications
           </h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          <div className="section-accent mb-12"></div>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {qualifications.map((qual, index) => (

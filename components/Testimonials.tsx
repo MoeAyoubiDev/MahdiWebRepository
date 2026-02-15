@@ -43,14 +43,14 @@ export default function Testimonials() {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 fade-in-section"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white/60 backdrop-blur-sm fade-in-section"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="section-heading mb-4">
             Patient Testimonials
           </h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          <div className="section-accent mb-12"></div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (

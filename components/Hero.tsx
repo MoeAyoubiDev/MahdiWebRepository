@@ -38,13 +38,13 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Doctor Image */}
           <div className="order-2 md:order-1 flex justify-center md:justify-end">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl transform rotate-6 opacity-20"></div>
-              <div className="relative w-80 h-96 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-3xl transform rotate-4 opacity-15 scale-105 group-hover:opacity-20 transition-opacity duration-500"></div>
+              <div className="relative w-80 h-[28rem] rounded-3xl overflow-hidden shadow-soft-lg ring-1 ring-black/5 transition-transform duration-500 group-hover:scale-[1.02]">
                 <img
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop"
+                  src="/profile.png"
                   alt="Dr. Mahdi Kheir Din"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
@@ -52,11 +52,11 @@ export default function Hero() {
 
           {/* Hero Content */}
           <div className="order-1 md:order-2 text-center md:text-left space-y-6">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
               Dr. Mahdi{' '}
               <span className="text-primary-600">Kheir Din</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary-600 font-semibold">
+            <p className="text-xl md:text-2xl text-primary-600 font-semibold tracking-wide">
               Physiotherapist & Rehabilitation Specialist
             </p>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
@@ -65,7 +65,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#contact"
-                className="px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="btn-primary inline-flex items-center justify-center"
               >
                 Book Consultation
               </a>
@@ -73,7 +73,7 @@ export default function Hero() {
                 href="https://wa.me/96112345678"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-emerald-500 text-white rounded-full font-semibold hover:bg-emerald-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 flex items-center justify-center gap-2"
               >
                 <svg
                   className="w-5 h-5"

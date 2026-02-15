@@ -143,22 +143,22 @@ export default function Specializations() {
     <section
       id="specializations"
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 fade-in-section"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white/60 backdrop-blur-sm fade-in-section"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="section-heading mb-4">
             Specializations
           </h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
+          <div className="section-accent mb-12"></div>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {specializations.map((spec, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-6 card-hover flex items-start gap-4"
+              className="glass rounded-2xl p-6 card-hover flex items-start gap-4 group border border-transparent hover:border-primary-100"
             >
-              <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600">
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-600 transition-transform duration-300 group-hover:scale-110">
                 {spec.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 pt-2">
