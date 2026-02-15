@@ -70,7 +70,7 @@ export default function Hero() {
                 Book Consultation
               </a>
               <a
-                href="https://wa.me/96112345678"
+                href="https://wa.me/9613629670"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-emerald-500 text-white rounded-full font-semibold hover:bg-emerald-600 transition-all duration-300 shadow-soft hover:shadow-soft-lg hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 flex items-center justify-center gap-2"

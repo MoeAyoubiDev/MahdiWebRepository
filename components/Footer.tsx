@@ -18,13 +18,13 @@ export default function Footer() {
           {/* Doctor Info */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              Dr. Mahdi Kheir Din
+              Dr. Mahdi Kheireddine
             </h3>
             <p className="text-gray-400">
               Physiotherapist & Rehabilitation Specialist
             </p>
             <p className="text-gray-400 mt-2">
-              Kheir Din Physiotherapy Clinic
+              Kheireddine Physiotherapy Clinic
             </p>
             <p className="text-gray-400">Beirut, Lebanon</p>
           </div>
@@ -98,7 +98,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p>
-            © {currentYear} Dr. Mahdi Kheir Din. All rights reserved.
+              Dr. Mahdi Kheireddine. All rights reserved.
           </p>
         </div>
       </div>
