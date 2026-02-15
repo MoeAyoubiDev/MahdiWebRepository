@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Dr. Mahdi Kheir Din - Physiotherapist & Rehabilitation Specialist',
+  title: 'Dr. Mahdi Kheireddine - Physiotherapist & Rehabilitation Specialist',
   description: 'Professional physiotherapy services in Beirut, Lebanon. Helping you move better, recover faster, and live pain-free.',
   keywords: 'physiotherapy, rehabilitation, Beirut, Lebanon, sports injury, back pain, neck pain',
 }

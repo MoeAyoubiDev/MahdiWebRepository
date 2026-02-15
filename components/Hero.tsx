@@ -43,7 +43,7 @@ export default function Hero() {
               <div className="relative w-80 h-[28rem] rounded-3xl overflow-hidden shadow-soft-lg ring-1 ring-black/5 transition-transform duration-500 group-hover:scale-[1.02]">
                 <img
                   src="/profile.png"
-                  alt="Dr. Mahdi Kheir Din"
+                  alt="Dr. Mahdi Kheireddine"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="order-1 md:order-2 text-center md:text-left space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
               Dr. Mahdi{' '}
-              <span className="text-primary-600">Kheir Din</span>
+              <span className="text-primary-600">Kheireddine</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-600 font-semibold tracking-wide">
               Physiotherapist & Rehabilitation Specialist

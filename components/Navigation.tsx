@@ -35,7 +35,7 @@ export default function Navigation() {
             href="#home"
             className="text-2xl font-bold text-primary-700 hover:text-primary-600 transition-colors"
           >
-            Dr. Mahdi Kheir Din
+            Dr. Mahdi Kheireddine
           </a>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
