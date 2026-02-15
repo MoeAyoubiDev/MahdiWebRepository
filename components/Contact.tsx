@@ -46,7 +46,7 @@ export default function Contact() {
             {/* Clinic Info */}
             <div className="text-center space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">
-                Kheir Din Physiotherapy Clinic
+                Kheireddine Physiotherapy Clinic
               </h3>
               <div className="space-y-2 text-gray-700">
                 <p className="flex items-center justify-center gap-2">
